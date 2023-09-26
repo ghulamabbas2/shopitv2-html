@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar row">
+      <div class="col-12 col-md-3 ps-5">
+        <div class="navbar-brand">
+          <a href="/">
+            <img src="../images/shopit_logo.png" alt="ShopIT Logo" />
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mt-2 mt-md-0">
+        <form action="your_search_action_url_here" method="get">
+          <div class="input-group">
+            <input
+              type="text"
+              id="search_field"
+              aria-describedby="search_btn"
+              class="form-control"
+              placeholder="Enter Product Name ..."
+              name="keyword"
+              value=""
+            />
+            <button id="search_btn" class="btn" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-md-3 mt-4 mt-md-0 text-center">
+        <a href="/cart" style="text-decoration: none">
+          <span id="cart" class="ms-3"> Cart </span>
+          <span class="ms-1" id="cart_count">0</span>
+        </a>
+
+        <div class="ms-4 dropdown">
+          <button
+            class="btn dropdown-toggle text-white"
+            type="button"
+            id="dropDownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <figure class="avatar avatar-nav">
+              <img
+                src="../images/default_avatar.jpg"
+                alt="User Avatar"
+                class="rounded-circle"
+              />
+            </figure>
+            <span>User</span>
+          </button>
+          <div class="dropdown-menu w-100" aria-labelledby="dropDownMenuButton">
+            <a class="dropdown-item" href="/admin/dashboard"> Dashboard </a>
+
+            <a class="dropdown-item" href="/me/orders"> Orders </a>
+
+            <a class="dropdown-item" href="/me/profile"> Profile </a>
+
+            <a class="dropdown-item text-danger" href="/"> Logout </a>
+          </div>
+        </div>
+
+        <a href="/login" class="btn ms-4" id="login_btn"> Login </a>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/9edb65c86a.js"></script>
+  </body>
+</html>
